@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        Movie-Model
+    </title>
+    <script src="https://kit.fontawesome.com/483e17999d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body>
+
+   <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6 mt-5">
+                    <a href="index.html" class="logo">
+                        <img src="./assets/img/logo.svg" alt="logo" title="logo">
+                    </a>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center mt-0">
+                    <button id="HideShowBtn" class="btn btn-sm nfx-pri-Btn">Add Movies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div class="container-fluid">
+    <div class="row" id="rowContainer">
+        <!-- <div class="col-md-3 col-sm-6">
+            <div class="card movie-card text-white">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-10">
+                        <h2 class="m-0">Movie Name</h2>
+                    </div>
+                    
+                    <div class="col-2">
+                        <h4 class="m-0"><span class="badge badge-success">5</span></h4>
+                    </div>
+                    </div>
+                </div>
+                <div class="card=-body">
+                    <figure>
+                        <img src="https://img.nowrunning.com/content/movie/2023/pushp-27946/bg8-pushpa-2.jpg" alt="pushpa" title="pushpa">
+                    </figure>
+                    <figcaption>
+                        <h5>movie Name</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur dolor harum illo sed suscipit molestias fugiat labore! Laudantium dignissimos quos, ratione illum in, assumenda beatae officia facere ullam, quis corporis!
+                    </p>
+                    </figcaption>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <button class="btn btn-sm nfx-sec-Btn">Edit</button>
+                    <button class="btn btn-sm nfx-pri-Btn">Remove</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+   </div>
+
+   <div class="backDrop closeBtn" id="backDrop"></div>
+
+   <div class="movieModel" id="movieModel">
+    <form id="formId">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h2>Add Movie Details</h2>
+                <i class="fa-solid fa-xmark fa-2x closeBtn"></i>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="movieTitle">movieTitle</label>
+                    <input type="text" id="movieTitle" class="form-control">
+                    <label for="movieImg">movieImg</label>
+                    <input type="text" id="movieImg" class="form-control">
+                    <label for="movieDec">movieDec</label>
+                    <textarea type="text" id="movieDec" class="form-control"></textarea>
+                    <label for="movieRating">movieRating</label>
+                    <select id="movieRating" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <button id="submitBtn" type="submit" class="btn btn-sm btn-outline-primary">Add Movie</button>
+                <button id="updateBtn" type="button" class="btn btn-sm btn-outline-primary d-none">Update </button>
+                <button type="button" class="btn btn-sm btn-outline-danger closeBtn">Close</button>
+            </div>
+        </div>
+    </form>
+   </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <a href="index.html" class="logo">
+                            <img src="./assets/img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <button id="HideShowModel" class="btn btn-sm nfx-pri-btn">Add Movies</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-4" id="rowContainer"> -->
+            <!-- <div class="col-md-3 col-sm-6">
+                <div class="card movie-card text-white">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-10">
+                                <h2>movie Title</h2>
+                            </div>
+                            <div class="col-2">
+                                <h4><span class="badge badge-success">5</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <figure>
+                            <img src="https://img.nowrunning.com/content/movie/2023/pushp-27946/bg8-pushpa-2.jpg">
+                            <figcaption>
+                                <h5>movie Title</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis porro, ut excepturi, alias quisquam ullam eos, harum officiis delectus modi dolor! Odio minima quo quam, ullam sequi ipsa ipsam?
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <button class="btn btn-sm nfx-sec-btn">Edit</button>
+                        <button class="btn btn-sm nfx-pri-btn">Remove</button>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div>
+    </div>
+
+    <div class="backDrop closeBtn" id="backDrop"></div>
+
+    <div class="movieModel" id="movieModel">
+        <form id="formId">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2>Add Movie Details</h2>
+                    <i class="fa-solid fa-xmark fa-2x closeBtn"></i>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="movieTitle">MovieTitle</label>
+                        <input type="text" id="movieTitle" class="form-control">
+                        <label for="movieImg">MovieImg</label>
+                        <input type="text" id="movieImg" class="form-control">
+                        <label for="movieDec">MovieDec</label>
+                        <textarea type="text" id="movieDec" class="form-control"></textarea>
+                        <label for="movieRating">MovieRating</label>
+                        <select id="movieRating" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <button id="submitBtn" type="submit" class="btn btn-sm btn-outline-primary">Add Movie</button>
+                    <button id="updateBtn" type="button" class="btn btn-sm btn-outline-primary d-none">Update</button>
+                    <button type="button" class="btn btn-sm nfx-pri-btn closeBtn">Close</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
